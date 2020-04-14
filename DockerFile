@@ -1,0 +1,6 @@
+FROM daocloud.io/library/node:10.16.0-jessie
+RUN mkdir -p /home/hyx
+WORKDIR /home/hyx/COPY . /home/hyx/
+RUN npm install 
+EXPOSE 8081
+CMD nmp start
